@@ -1,31 +1,22 @@
 package cc.ghast.memecheat.utils.location;
 
 import lombok.Getter;
+import lombok.AllArgsConstructor;
 import org.bukkit.Location;
 import org.bukkit.World;
 import org.bukkit.entity.Player;
 
+@Getter
+@AllArgsConstructor
 public class Position {
 
-    @Getter private final Player player;
-    @Getter private final double x;
-    @Getter private final double y;
-    @Getter private final double z;
-    @Getter private final float pitch;
-    @Getter private final float yaw;
-    @Getter private final World bukkitWorld;
-    @Getter private final Location bukkitLocation;
-    @Getter private final long timestamp;
-
-    public Position(Player player, double x, double y, double z, float pitch, float yaw, World bukkitWorld, Location bukkitLocation, long timestamp){
-        this.player = player;
-        this.x = x;
-        this.y = y;
-        this.z = z;
-        this.pitch = pitch;
-        this.yaw = yaw;
-        this.bukkitLocation = bukkitLocation;
-        this.bukkitWorld = bukkitWorld;
-        this.timestamp = timestamp;
-    }
+    private final Player player;
+    private final double x;
+    private final double y;
+    private final double z;
+    private final float pitch;
+    private final float yaw;
+    private final World bukkitWorld;
+    private final Location bukkitLocation;
+    private final long timestamp;
 }
